@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "HackerPresence",
+    "version": "1.0",
+  
+    "applications": {
+      "gecko": {
+        "id": "hackerpresence@mozilla.org"
+      }
+    },
+  
+    "permissions": ["http://*/*", "https://*/*"],
+  
+    "browser_action": {
+      "default_icon": "button/HackerPresenceIcon.png",
+      "default_title": "HackerPresence",
+      "default_popup": "popup/choose_beast.html"
+    },
+  
+    "web_accessible_resources": [
+      "beasts/frog.jpg",
+      "beasts/turtle.jpg",
+      "beasts/snake.jpg"
+    ]
+  }
+  
