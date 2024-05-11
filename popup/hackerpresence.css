@@ -1,21 +1,53 @@
-html,
 body {
-  height: 100px;
-  width: 100px;
+  font-family: sans-serif;
   margin: 0;
+  padding: 20px;
 }
 
-.beast {
-  height: 30%;
-  width: 90%;
-  margin: 3% auto;
-  padding-top: 6%;
-  text-align: center;
-  font-size: 1.5em;
-  background-color: #e5f2f2;
+header {
+  display: flex;  /* Make header elements display horizontally */
+  align-items: center;  /* Align logo and title vertically */
+  margin-bottom: 10px;  /* Add space after the header */
+}
+
+.logo {
+  width: 100px;  /* Adjust logo width as needed */
+  height: auto;   /* Maintain aspect ratio */
+  margin-right: 20px; /* Add space between logo and title */
+}
+
+
+h1 {
+  text-align: center;     /* Center align the title */
+  font-size: 2em;          /* Increase title size for emphasis */
+  margin-bottom: 10px;     /* Add space after the title */
+}
+
+p {
+  text-align: center;     /* Center align the paragraph */
+  font-size: 1.2em;        /* Slightly larger font for paragraph */
+}
+
+.threat-list {
+  list-style: none;        /* Remove default bullet points */
+  padding: 0;              /* Remove default list padding */
+  margin: 0 auto;         /* Center align the list horizontally */
+}
+
+.threat-list li button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #3c4d40;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.beast:hover {
-  background-color: #cff2f2;
+.threat-list li button:hover {
+  background-color: #212622;
 }

@@ -1,26 +1,26 @@
 {
-    "manifest_version": 2,
-    "name": "HackerPresence",
-    "version": "1.0",
-  
-    "applications": {
-      "gecko": {
-        "id": "hackerpresence@mozilla.org"
-      }
-    },
-  
-    "permissions": ["http://*/*", "https://*/*"],
-  
-    "browser_action": {
-      "default_icon": "button/HackerPresenceIcon.png",
-      "default_title": "HackerPresence",
-      "default_popup": "popup/choose_beast.html"
-    },
-  
-    "web_accessible_resources": [
-      "beasts/frog.jpg",
-      "beasts/turtle.jpg",
-      "beasts/snake.jpg"
-    ]
-  }
+  "manifest_version": 2,
+  "name": "HackerPresence",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "hackerpresence@mozilla.org"
+    }
+  },
+
+  "permissions": ["http://*/*", "https://*/*", "activeTab"],
+
+  "browser_action": {
+    "default_icon": "button/HackerPresenceIcon.png",
+    "default_title": "HackerPresence",
+    "default_popup": "popup/hackerpresence.html"
+  },
+
+  "web_accessible_resources": [
+    "button/HackerPresenceIcon.png"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
   

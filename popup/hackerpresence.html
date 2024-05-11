@@ -1,16 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="choose_beast.css" />
-  </head>
+<head>
 
-  <body>
-    <div class="beast">Frog</div>
-    <div class="beast">Turtle</div>
-    <div class="beast">Snake</div>
+  <meta charset="UTF-8">
+  <title>Hacker Presence</title>
+  <link rel="stylesheet" href="hackerpresence.css">
+  <script src="../content_scripts/cookie.js"></script>
+  <script src="../content_scripts/hook_hijacking.js"></script>
+  <script src="../content_scripts/local_storage.js"></script>
+  <script src="../content_scripts/thirdPart.js"></script>
+  <script src="hackerpresence.js"></script>
 
-    <script src="choose_beast.js"></script>
-  </body>
+</head>
+
+<body>
+
+  <header> 
+    <img src="../button/HackerPresenceIcon.png" alt="Hacker Presence Logo" class="logo"> <h1>Hacker Presence</h1>
+  </header>
+
+  <h1>Hacker Presence</h1>
+  <p>Check for potential security risks:</p>
+
+
+  <ul class="threat-list">
+
+    <li><button class="hackerpresence-button">Third Party Domains</button></li>
+    <div id="third_party">
+    </div>
+
+    <li><button class="hackerpresence-button">Hijacking & Hooks</button></li>
+    <div id="hijacking">
+    </div>
+
+    <li><button class="hackerpresence-button">Local Storage (HTML5)</button></li>
+    <div id="local_storage">
+    </div>
+
+    <li><button class="hackerpresence-button">Cookies & Supercookies</button></li>
+    <div id="cookies">
+    </div>
+    
+
+  </ul>
+
+
+</body>
+
 </html>
