@@ -18,9 +18,31 @@
 
   <header> 
     <img src="../button/HackerPresenceIcon.png" alt="Hacker Presence Logo" class="logo"> <h1>Hacker Presence</h1>
+
+    <style>
+      .container-rectangle {
+        display: flex;
+        align-items: center;
+      }
+    
+      #rectangle {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+    </style>
   </header>
 
   <h1>Hacker Presence</h1>
+
+  <div class="container-rectangle">
+    <p>Overall security level for the web site:</p>
+    <div id="rectangle"></div>
+  </div>
+
+
   <p>Check for potential security risks:</p>
 
 
@@ -40,7 +62,6 @@
 
     <li><button class="hackerpresence-button">Cookies & Supercookies</button></li>
     <div id="cookies">
-      hello word
     </div>    
 
   </ul>
