@@ -9,8 +9,6 @@
     }
   },
 
-  "permissions": ["http://*/*", "https://*/*", "activeTab"],
-
   "browser_action": {
     "default_icon": "button/HackerPresenceIcon.png",
     "default_title": "HackerPresence",
@@ -21,7 +19,24 @@
     "button/HackerPresenceIcon.png"
   ],
 
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+  "http://*/*",
+  "https://*/*",
+  "activeTab",
+  "webRequest",
+  "webRequestBlocking",
+  "activeTab",
+  "storage",
+  "tabs",
+  "cookies",
+  "<all_urls>"
+]
 
 }
   
