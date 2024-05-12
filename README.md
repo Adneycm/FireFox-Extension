@@ -10,7 +10,7 @@ This extension performs security checks on cookies, potential hijackings, local 
 
 It also provides a grading system so you can check the overall security of the website and decide for yourself if you want to enter it or not.
 
-![Video Name](button/video.webm)
+![example](button/example.png)
 
 
 To test it, you can clone the repository and follow these steps:
