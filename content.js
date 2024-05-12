@@ -68,12 +68,12 @@ function calculateHijackingRisk() {
 
     // Check if the website uses HTTPS
     if (window.location.protocol === 'https:') {
-        risk += 2; // HTTPS reduces risk
+        risk += 0; // HTTPS reduces risk
     } else {
         risk += 5; // HTTP increases risk
     }
 
-    // Check if cookies are marked as Secure
+
     var cookies = document.cookie.split(';');
     cookies.forEach(function(cookie) {
         var cookieParts = cookie.trim().split('=');
@@ -88,7 +88,7 @@ function calculateHijackingRisk() {
     // Check if session identifiers are secure
     // This is a simplified example, actual checks should be more comprehensive
     if (document.cookie.includes('sessionid=')) {
-        risk += 3; // Presence of a session identifier increases risk
+        risk += 3; 
     }
 
     return risk;
